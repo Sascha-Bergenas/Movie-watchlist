@@ -20,10 +20,11 @@ const MovieCard = ({ movie }) => {
         />
         <div className="movie-overlay">
           <button
-            className={`favorite-btn && ${favorite ? "active" : ""}`}
+            className={`favorite-btn ${favorite ? "active" : ""}`}
             onClick={onFavClick}
+            aria-label={favorite ? "Remove from watchlist" : "Add to watchlist"}
           >
-            ♥
+            {favorite ? "★" : "☆"}
           </button>
         </div>
       </div>

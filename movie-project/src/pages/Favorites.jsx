@@ -8,7 +8,7 @@ const Favorite = () => {
   if (favorites) {
     return (
       <div className="favorites">
-        <h2>Dina Favoriter</h2>
+        <h2>Din Watchlist</h2>
         <div className="movies-grid">
           {favorites.map((movie) => (
             <MovieCard movie={movie} key={movie.id} />
@@ -19,7 +19,7 @@ const Favorite = () => {
   }
   return (
     <div className="favorites-empty">
-      <h2>Inga favoriter här än.</h2>
+      <h2>Inga filmer i din watchlist än.</h2>
     </div>
   );
 };

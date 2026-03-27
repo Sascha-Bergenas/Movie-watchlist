@@ -1,16 +1,20 @@
 .movie-card {
   position: relative;
-  border-radius: 8px;
+  border-radius: 10px;
   overflow: hidden;
-  background-color: #1a1a1a;
-  transition: transform 0.2s;
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s;
   height: 100%;
   display: flex;
   flex-direction: column;
 }
 
 .movie-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(17, 24, 39, 0.08);
 }
 
 .movie-poster {
@@ -31,11 +35,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0.1),
-    rgba(0, 0, 0, 0.8)
-  );
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.55));
   opacity: 0;
   transition: opacity 0.2s;
   display: flex;
@@ -52,10 +52,10 @@
   position: absolute;
   top: 1rem;
   right: 1rem;
-  color: white;
+  color: #ffffff;
   font-size: 1.5rem;
   padding: 0.5rem;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(17, 24, 39, 0.65);
   border-radius: 50%;
   width: 40px;
   height: 40px;
@@ -66,11 +66,11 @@
 }
 
 .favorite-btn:hover {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(17, 24, 39, 0.85);
 }
 
 .favorite-btn.active {
-  color: #ff4757;
+  color: #f59e0b;
 }
 
 .rating-select {
@@ -94,10 +94,11 @@
 .movie-info h3 {
   font-size: 1rem;
   margin: 0;
+  color: #111827;
 }
 
 .movie-info p {
-  color: #999;
+  color: #6b7280;
   font-size: 0.9rem;
 }
 

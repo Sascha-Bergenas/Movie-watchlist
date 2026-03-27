@@ -61,6 +61,8 @@ const Home = () => {
 
       {error && <div className="error-message">{error}</div>}
 
+      <h2 className="section-title">Senaste populära filmer</h2>
+
       {loading ? (
         <div className="loading">Loading ...</div>
       ) : (
